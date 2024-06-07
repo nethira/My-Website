@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nethira's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        @media(min-width:1201px) {
+            body {
+                margin: 0px;
+                background-color: #0c1c33;
+            }
+
+            .main-box-first {
+                height: 100vh;
+                width: 100vw;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                background-image: url('12_generated.jpg');
+                background-size: cover;
+                align-items: center;
+
+            }
+
+            .main-box-second {
+                flex: 1;
+                width: 70vw;
+                margin: 22vh 30vw 25vh;
+                height: 60vh;
+                /* background-color: rgb(36, 42, 96,70%); */
+                background-color: rgb(28, 37, 79, 70%);
+                border-radius: 25px;
+                color: rgb(246, 238, 255);
+                align-items: center;
+            }
+
+            .main-profile-img {
+                width: 18%;
+                margin-top: 5%;
+                border-style: double;
+                border-width: 7px;
+                border-radius: 50%;
+                color: rgb(246, 238, 255, 0.9);
+            }
+
+            .name-title-card {
+                font-family: "Cabin", sans-serif;
+                font-size: 3rem;
+                margin: 0;
+                padding: 0;
+
+            }
+
+            .work-title-card,
+            .des-title-card {
+                font-family: "Work Sans", sans-serif;
+            }
+
+            .work-title-card {
+                font-size: 18px;
+                margin-top: 0;
+                padding: 0;
+            }
+
+            .des-title-card {
+                font-size: 15px;
+                padding-top: 25px;
+                font-weight: 300;
+
+            }
+
+            i {
+                color: white;
+                margin: 10px;
+                font-size: 1.2rem;
+            }
+
+            .main-box-third {
+                text-align: center;
+            }
+
+            .scroll {
+                position: absolute;
+                bottom: 1%;
+                left: 48.7%;
+
+            }
+
+            .hire-me-btn:hover {
+                cursor: pointer;
+                background-color: rgb(125, 63, 144, 0.7);
+            }
+
+            .scroll:hover {
+                cursor: pointer;
+            }
+
+            .scroll {
+                animation: beat .60s infinite alternate;
+                transform-origin: center;
+                width: 2%;
+            }
+
+            /* Heart beat animation */
+            @keyframes beat {
+                to {
+                    transform: scale(1.1);
+                }
+            }
+
+            .hire-me-btn {
+                position: absolute;
+                bottom: 9%;
+                left: 41%;
+                width: 8%;
+                height: 6%;
+                border-radius: 20px;
+                font-size: 0.8rem;
+                font-family: "Work Sans", sans-serif;
+                font-weight: bold;
+                background-color: rgb(28, 37, 79, 60%);
+                color: white;
+                border-style: dashed;
+                border-color: rgb(246, 238, 255, 0.9);
+
+            }
+
+            .resume {
+                position: absolute;
+                bottom: 9%;
+                left: 50%;
+                width: 8%;
+                height: 6%;
+                border-radius: 20px;
+                font-size: 0.8rem;
+                font-family: "Work Sans", sans-serif;
+                font-weight: bold;
+                background-color: rgb(28, 37, 79, 60%);
+                color: white;
+                border-style: dashed;
+                border-color: rgb(246, 238, 255, 0.9);
+            }
+
+            .resume:hover {
+                cursor: pointer;
+                background-color: rgb(125, 63, 144, 0.7);
+            }
+
+            i:hover {
+                color: rgb(125, 63, 144, 0.7);
+            }
+
+            .job {
+                color: rgb(246, 238, 255, 0.9);
+                position: absolute;
+                top: 0;
+                font-family: "Press Start 2P", system-ui;
+                font-size: x-small;
+            }
+
+        }
+
+        @media(min-width:320px) and (max-width:1200px) {
+            body {
+                margin: 0px;
+                background-color: #0c1c33;
+            }
+
+            .main-box-first {
+                height: 100vh;
+                width: 100vw;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                background-image: url('12_generated.jpg');
+                background-size: fit;
+                align-items: center;
+
+            }
+
+            .main-box-second {
+                flex: 1;
+                width: 75vw;
+                margin: 18vh 8vw 18vh;
+                height: 60vh;
+                /* background-color: rgb(36, 42, 96,70%); */
+                background-color: rgb(28, 37, 79, 70%);
+                border-radius: 25px;
+                color: rgb(246, 238, 255);
+                align-items: center;
+            }
+
+            .main-profile-img {
+                width: 30%;
+                margin-top: 10%;
+                border-style: double;
+                border-width: 6px;
+                border-radius: 50%;
+                color: rgb(246, 238, 255, 0.9);
+            }
+
+            .name-title-card {
+                font-family: "Cabin", sans-serif;
+                font-size: 1.8rem;
+                margin: 0;
+                margin-top: 5%;
+                padding: 0;
+
+            }
+
+            .work-title-card,
+            .des-title-card {
+                font-family: "Work Sans", sans-serif;
+            }
+
+            .work-title-card {
+                font-size: 14px;
+                margin-top: 0;
+                padding: 0;
+            }
+
+            .des-title-card {
+                font-size: 14px;
+                margin: 5px;
+                padding-top: 25px;
+                font-weight: 300;
+
+            }
+
+            i {
+                color: white;
+                margin: 10px;
+                font-size: 1.2rem;
+            }
+
+            .main-box-third {
+                text-align: center;
+            }
+
+            .scroll {
+                position: absolute;
+                bottom: 3%;
+                left: 48.7%;
+            }
+
+            .hire-me-btn:hover {
+                cursor: pointer;
+                background-color: rgb(125, 63, 144, 0.7);
+            }
+
+            .scroll:hover {
+                cursor: pointer;
+            }
+
+            .scroll {
+                animation: beat .60s infinite alternate;
+                transform-origin: center;
+                width: 8%;
+            }
+
+            /* Heart beat animation */
+            @keyframes beat {
+                to {
+                    transform: scale(1.1);
+                }
+            }
+
+            .hire-me-btn {
+                position: absolute;
+                bottom: 12%;
+                left: 22%;
+                width: 25%;
+                height: 5%;
+                border-radius: 20px;
+                font-size: 0.7rem;
+                font-family: "Work Sans", sans-serif;
+                font-weight: bold;
+                background-color: rgb(28, 37, 79, 60%);
+                color: white;
+                border-style: dashed;
+                border-color: rgb(246, 238, 255, 0.9);
+
+            }
+
+            .resume {
+                position: absolute;
+                bottom: 12%;
+                left: 55%;
+                width: 25%;
+                height: 5%;
+                border-radius: 20px;
+                font-size: 0.7rem;
+                font-family: "Work Sans", sans-serif;
+                font-weight: bold;
+                background-color: rgb(28, 37, 79, 60%);
+                color: white;
+                border-style: dashed;
+                border-color: rgb(246, 238, 255, 0.9);
+            }
+
+            .resume:hover {
+                cursor: pointer;
+                background-color: rgb(125, 63, 144, 0.7);
+            }
+
+            i:hover {
+                color: rgb(125, 63, 144, 0.7);
+            }
+
+            .job {
+                color: rgb(246, 238, 255, 0.9);
+                position: absolute;
+                top: 0;
+                font-family: "Press Start 2P", system-ui;
+                font-size: xx-small;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main-box-first">
+        <div class="job">
+            <p>./</p>
+            <p>./Software Tester</p>
+            <p>./Front-end Developer</p>
+        </div>
+        <div class="main-box-second">
+            <div class="main-box-third">
+                <img class="main-profile-img" src="cropped_image (1) - Copy.png">
+                <p class="name-title-card">SHREE NETHIRA</h1>
+                    <p class="work-title-card">I'am an SDET engineer</p>
+                    <a href="https://www.linkedin.com/in/shree-nethira/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/nethira" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <p class="des-title-card">"Developed this portfolio to showcase my work in various testing tools and
+                        a passion towards front-end development"</p>
+            </div>
+        </div>
+        <a href="mailto:example@gmail.com">
+            <button class="hire-me-btn" type="button">Hire Me</button>
+        </a>
+        <a href="Shree_Nethira_B.pdf" download="Shree_Nethira_B"><button class="resume"
+                type="button">Resume</button></a><br>
+        <img class="scroll" src="icons8-double-down-48 (1).png">
+    </div>
+
+</body>
+
+</html>
